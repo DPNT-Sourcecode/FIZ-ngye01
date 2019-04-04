@@ -13,3 +13,9 @@ class TestFizzBuzz():
 
     def test_fizz_buzz_for_30(self):
         assert fizz_buzz_solution.fizz_buzz(30) == "fizz buzz"
+
+    def test_2(self):
+        assert fizz_buzz_solution.fizz_buzz(2) == "2"
+
+    def test_7(self):
+        assert fizz_buzz_solution.fizz_buzz(7) == "7"

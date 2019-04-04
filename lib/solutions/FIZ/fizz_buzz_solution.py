@@ -1,3 +1,7 @@
 # noinspection PyUnusedLocal
 def fizz_buzz(number):
-    raise NotImplementedError()
+    if number % 3 == 0:
+        return "fizz"
+    elif number % 5 == 0:
+        return "buzz"
+    
