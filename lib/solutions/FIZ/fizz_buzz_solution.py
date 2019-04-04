@@ -23,7 +23,9 @@ def is_buzz(number):
     return '5' in str(number) or number % 5 == 0
 
 def is_deluxe(number):
-    repr = str(number)
-    all_same_digits = all([digit == repr[0] for digit in repr])
-    return number > 10 and all_same_digits
+    return (
+        ('3' in str(number) and number % 3 == 0) or
+        ('5' in str(number) and number % 5 == 0)
+    )
+
 

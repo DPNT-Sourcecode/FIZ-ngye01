@@ -27,7 +27,7 @@ class TestFizzBuzz():
     
     # contains 5 and divisible by 5 - even
     def test_50_is_buzz_deluxe(self):
-        assert fizz_buzz_solution.fizz_buzz(5) == "buzz deluxe"
+        assert fizz_buzz_solution.fizz_buzz(50) == "buzz deluxe"
 
     # contains 5 and divisible by 5 - odd
     def test_5_is_buzz_fake_deluxe(self):
@@ -51,6 +51,7 @@ class TestFizzBuzz():
 
     def test_22_is_typical(self):
         assert fizz_buzz_solution.fizz_buzz(22) == "22"
+
 
 
 
