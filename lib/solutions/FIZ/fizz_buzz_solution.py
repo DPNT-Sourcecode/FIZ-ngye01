@@ -1,11 +1,12 @@
 # noinspection PyUnusedLocal
 def fizz_buzz(number):
-    if is_fizz(number) and is_buzz(number):
-        return "fizz buzz"
+    qualifiers = []
     if is_fizz(number):
-        return "fizz"
+        qualifiers.push('fizz')
     if is_buzz(number):
-        return "buzz"
+        qualifiers.push('buzz')
+    if is_deluxe(number):
+        qualifiers.push('deluxe')
     return str(number)
     
 def is_fizz(number):
@@ -15,5 +16,7 @@ def is_buzz(number):
     return '5' in str(number) or number % 5 == 0
 
 def is_deluxe(number):
-    return number > 10
+    repr = str(number)
+    all_same_digits = all([digit == repr[0] for digit in repr])
+    return number > 10 and all_same_digits
 
