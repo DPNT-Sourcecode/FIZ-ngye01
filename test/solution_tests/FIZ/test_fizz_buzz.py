@@ -32,6 +32,3 @@ class TestFizzBuzz():
 
     def test_7(self):
         assert fizz_buzz_solution.fizz_buzz(7) == "7"
-
-
-
