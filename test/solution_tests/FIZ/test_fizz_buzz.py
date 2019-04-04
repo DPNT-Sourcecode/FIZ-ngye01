@@ -27,6 +27,16 @@ class TestFizzBuzz():
     def test_53_is_fizz_buzz(self):
         assert fizz_buzz_solution.fizz_buzz(53) == "fizz buzz"
 
+    def test_11_is_deluxe(self):
+        assert fizz_buzz_solution.fizz_buzz(11) == "deluxe"
+
+
+    def test_222_is_fizz_deluxe(self):
+        assert fizz_buzz_solution.fizz_buzz(222) == "fizz deluxe"
+
+    def test_5555_is_fizz_deluxe(self):
+        assert fizz_buzz_solution.fizz_buzz(222) == "fizz deluxe"
+
     def test_2(self):
         assert fizz_buzz_solution.fizz_buzz(2) == "2"
 
