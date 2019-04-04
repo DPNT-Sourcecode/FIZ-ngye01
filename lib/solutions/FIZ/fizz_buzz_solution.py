@@ -6,11 +6,15 @@ def fizz_buzz(number):
     if is_buzz(number):
         qualifiers.append('buzz')
     if is_deluxe(number):
-        qualifiers.append('deluxe')    
+        if number % 2 == 0:
+            qualifiers.append('deluxe')
+        else 
+            qualifiers.append('fake deluxe')
     if len(qualifiers) > 0:
         return " ".join(qualifiers)
     return str(number)
     
+
 def is_fizz(number):
     return '3' in str(number) or number % 3 == 0
 
