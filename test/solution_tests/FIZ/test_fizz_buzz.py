@@ -28,22 +28,25 @@ class TestFizzBuzz():
         assert fizz_buzz_solution.fizz_buzz(53) == "fizz buzz"
 
 
-    def test_11_is_deluxe(self):
-        assert fizz_buzz_solution.fizz_buzz(11) == "deluxe"
+    def test_22_is_deluxe(self):
+        assert fizz_buzz_solution.fizz_buzz(22) == "deluxe"
+
+    def test_11_is__fake_deluxe(self):
+        assert fizz_buzz_solution.fizz_buzz(11) == "fake deluxe"
 
 
     def test_222_is_fizz_deluxe(self):
         assert fizz_buzz_solution.fizz_buzz(222) == "fizz deluxe"
 
-    def test_333_is_fizz_deluxe(self):
-        assert fizz_buzz_solution.fizz_buzz(222) == "fizz fake deluxe"
+    def test_333_is_fizz_fake_deluxe(self):
+        assert fizz_buzz_solution.fizz_buzz(333) == "fizz fake deluxe"
 
     # there are no longer numbers that can be buzz deluxe
 
-    def test_5555_is_buzz_deluxe(self):
+    def test_5555_is_buzz_fake_deluxe(self):
         assert fizz_buzz_solution.fizz_buzz(5555) == "buzz fake deluxe"
 
-    def test_555_is_buzz_deluxe(self):
+    def test_555_is_fizz_buzz_fake_deluxe(self):
         assert fizz_buzz_solution.fizz_buzz(555) == "fizz buzz fake deluxe"
 
 
@@ -52,3 +55,4 @@ class TestFizzBuzz():
 
     def test_7(self):
         assert fizz_buzz_solution.fizz_buzz(7) == "7"
+
