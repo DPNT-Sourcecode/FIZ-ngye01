@@ -15,4 +15,5 @@ def is_buzz(number):
     return '5' in str(number) or number % 5 == 0
 
 def is_deluxe(number):
-    return '5' in str(number) or number % 5 == 0
+    return number > 10
+
