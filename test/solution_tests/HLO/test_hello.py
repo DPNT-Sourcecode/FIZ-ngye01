@@ -6,5 +6,3 @@ class TestHello():
         assert hello_solution.hello("John") == "Hello, John!"
         assert hello_solution.hello("Alice") == "Hello, Alice!"
 
-
-
