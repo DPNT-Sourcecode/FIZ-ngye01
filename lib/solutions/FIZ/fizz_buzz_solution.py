@@ -2,11 +2,13 @@
 def fizz_buzz(number):
     qualifiers = []
     if is_fizz(number):
-        qualifiers.push('fizz')
+        qualifiers.append('fizz')
     if is_buzz(number):
-        qualifiers.push('buzz')
+        qualifiers.append('buzz')
     if is_deluxe(number):
-        qualifiers.push('deluxe')
+        qualifiers.append('deluxe')    
+    if len(qualifiers) > 0:
+        return " ".join(qualifiers)
     return str(number)
     
 def is_fizz(number):
@@ -19,4 +21,5 @@ def is_deluxe(number):
     repr = str(number)
     all_same_digits = all([digit == repr[0] for digit in repr])
     return number > 10 and all_same_digits
+
 
