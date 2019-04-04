@@ -27,5 +27,3 @@ def is_deluxe(number):
         ('3' in str(number) and number % 3 == 0) or
         ('5' in str(number) and number % 5 == 0)
     )
-
-

@@ -51,8 +51,3 @@ class TestFizzBuzz():
 
     def test_22_is_typical(self):
         assert fizz_buzz_solution.fizz_buzz(22) == "22"
-
-
-
-
-
