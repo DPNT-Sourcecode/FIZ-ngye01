@@ -9,11 +9,11 @@ class TestFizzBuzz():
     def test_13_is_fizz(self):
         assert fizz_buzz_solution.fizz_buzz(13) == "fizz"
 
-    # contains 3 and divisible by 3
-    def test_3_is_fizz_deluxe(self):
-        assert fizz_buzz_solution.fizz_buzz(3) == "fizz fake deluxe"
+    # contains 3 and divisible by 3 - even
+    def test_432_is_fizz_deluxe(self):
+        assert fizz_buzz_solution.fizz_buzz(432) == "fizz deluxe"
     
-    # contains 3 and divisible by 3
+    # contains 3 and divisible by 3 - odd
     def test_3_is_fizz_deluxe(self):
         assert fizz_buzz_solution.fizz_buzz(3) == "fizz fake deluxe"
 
@@ -25,8 +25,12 @@ class TestFizzBuzz():
     def test_52_is_buzz(self):
         assert fizz_buzz_solution.fizz_buzz(52) == "buzz"
     
-    # contains 5 and divisible by 5
-    def test_5_is_fizz_deluxe(self):
+    # contains 5 and divisible by 5 - even
+    def test_50_is_buzz_deluxe(self):
+        assert fizz_buzz_solution.fizz_buzz(5) == "buzz deluxe"
+
+    # contains 5 and divisible by 5 - odd
+    def test_5_is_buzz_fake_deluxe(self):
         assert fizz_buzz_solution.fizz_buzz(5) == "buzz fake deluxe"
 
 
@@ -47,6 +51,7 @@ class TestFizzBuzz():
 
     def test_22_is_typical(self):
         assert fizz_buzz_solution.fizz_buzz(22) == "22"
+
 
 
 
