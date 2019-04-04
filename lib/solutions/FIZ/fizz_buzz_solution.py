@@ -21,5 +21,3 @@ def is_deluxe(number):
     repr = str(number)
     all_same_digits = all([digit == repr[0] for digit in repr])
     return number > 10 and all_same_digits
-
-
