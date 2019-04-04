@@ -2,14 +2,35 @@ from solutions.FIZ import fizz_buzz_solution
 
 
 class TestFizzBuzz():
-    def test_3_is_fizz(self):
-        assert fizz_buzz_solution.fizz_buzz(3) == "fizz deluxe"
-
+    # divisible by 3
+    def test_6_is_fizz(self):
+        assert fizz_buzz_solution.fizz_buzz(6) == "fizz"
+    # contains 3
     def test_13_is_fizz(self):
         assert fizz_buzz_solution.fizz_buzz(13) == "fizz"
+    
+    # contains 3 and divisible by 3
+    def test_3_is_fizz_deluxe(self):
+        assert fizz_buzz_solution.fizz_buzz(3) == "fizz deluxe"
 
-    def test_3091_is_fizz(self):
-        assert fizz_buzz_solution.fizz_buzz(3091) == "fizz"
+    def test_3090_is_fizz_buzz_deluxe(self):
+        assert fizz_buzz_solution.fizz_buzz(3090) == "fizz buzz deluxe"
+
+
+    # divisible by 3
+    def test_10_is_buzz(self):
+        assert fizz_buzz_solution.fizz_buzz(6) == "fizz"
+    # contains 3
+    def test_13_is_fizz(self):
+        assert fizz_buzz_solution.fizz_buzz(13) == "fizz"
+    
+    # contains 3 and divisible by 3
+    def test_3_is_fizz_deluxe(self):
+        assert fizz_buzz_solution.fizz_buzz(3) == "fizz deluxe"
+
+    def test_3090_is_fizz_buzz_deluxe(self):
+        assert fizz_buzz_solution.fizz_buzz(3090) == "fizz buzz deluxe"
+
 
     def test_5_is_buzz(self):
         assert fizz_buzz_solution.fizz_buzz(5) == "buzz"
@@ -47,4 +68,5 @@ class TestFizzBuzz():
 
     def test_22_is_typical(self):
         assert fizz_buzz_solution.fizz_buzz(22) == "22"
+
 
